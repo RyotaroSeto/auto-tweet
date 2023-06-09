@@ -1,11 +1,9 @@
 package main
 
-import (
-	"github.com/GenkiHirano/go-twitter-api.git/twitter"
-)
+import "auto-tweet/twitter"
 
 func main() {
-	twitter.PostTweet("テストです")
-	twitter.GetSearch("Gopherくん")
-	twitter.GetHomeTimeline(50)
+	twitter.Tweet("こんにちは")
+	twitter.GetSearch("こんにちは")
+	twitter.GetHomeTimeline(10)
 }
